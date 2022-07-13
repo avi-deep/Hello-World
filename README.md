@@ -1,2 +1,2 @@
 # hello-world
-learning app development 
+learning app development using JS
