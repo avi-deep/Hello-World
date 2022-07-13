@@ -15,7 +15,7 @@ int appWidth, appHeight;
 void setup() 
 {
   //fullScreen();
-  size(500, 700); //Display Geometry: landscape, portrait, square
+  size(400, 700); //Display Geometry: landscape, portrait, square
   //Able to swap key variables to test app
   appWidth = width; //displayWidth
   appHeight = height; //displayHeight 
@@ -27,8 +27,16 @@ void setup()
   //
   //DISPLAY GEO
   String ls="Landscape or Square", p="Portrait",  DO="display orentaition", instruct=" Plz turn, le Fone"; //Local Variables
-  String orentation = (appWidth >= appHeight) ? ls : p; //Ternary Operator, similar to single line IF
-  println(DO, orentation);
+  String orientation = (appWidth >= appHeight) ? ls : p; //Ternary Operator, similar to single line IF
+  println(DO, orientation);
+  if (orientation == p) println(instruct) ; //Landscape prefered
+  if(orientation == ls) {
+    println("good to go");
+  } else {
+    print(instruct);
+    appWidth *= 0; //
+    appHeight *= 0; //
+  } // End If
   //
 }// END setup
 //
