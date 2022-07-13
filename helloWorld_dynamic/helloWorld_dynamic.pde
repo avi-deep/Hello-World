@@ -16,6 +16,10 @@ void setup()
   //fullScreen();
   size(500, 500);
   println(width, height, displayWidth, displayHeight);
+  //CANVAS WILL ONLY DISPLAY WHEN IT IS SMALLER THAN DISPLAY
+  if ( width >= displayWidth) exit() ; //Canvas is broken
+  if ( height >= displayHeight) exit() ; //Canvas is broken
+  //if () ;
 }// END setup
 //
 void draw() 
