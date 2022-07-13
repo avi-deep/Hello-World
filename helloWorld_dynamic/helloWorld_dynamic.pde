@@ -19,7 +19,7 @@ void setup()
   //CANVAS WILL ONLY DISPLAY WHEN IT IS SMALLER THAN DISPLAY
   if ( width >= displayWidth) exit() ; //Canvas is broken
   if ( height >= displayHeight) exit() ; //Canvas is broken
-  //if () ;
+  if ( width >= displayWidth || height >= displayHeight ) println("Canvas is BROKEN, bigger than Display"); ;
 }// END setup
 //
 void draw() 
