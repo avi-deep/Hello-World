@@ -6,6 +6,7 @@ char space = ' ';
 String teacher = "Mercer";
 String is = "is";
 String thisIsCamelCasing = "amazing!";
+int appWidth, appHeight;
 
 //*******
 // ASCII decimal # . = 46, therefore, period+period+period = 46+46+46=138
@@ -14,7 +15,9 @@ String thisIsCamelCasing = "amazing!";
 void setup() 
 {
   //fullScreen();
-  size(500, 500);
+  size(500, 500); //Display Geometry: landscape, portrait, square
+  appWidth = width;
+  appHeight = height;
   println(width, height, displayWidth, displayHeight);
   //CANVAS WILL ONLY DISPLAY WHEN IT IS SMALLER THAN DISPLAY
   if ( width >= displayWidth) exit() ; //Canvas is broken
@@ -26,7 +29,7 @@ void setup()
 //
 void draw() 
 {
-  println(mr+period+teacher, "\t\t\t"+space+thisIsCamelCasing);
+  //println(mr+period+teacher, "\t\t\t"+space+thisIsCamelCasing);
 }//END draw
 //
 void keyPressed() {} //END keyPressed
