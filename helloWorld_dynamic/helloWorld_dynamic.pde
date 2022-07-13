@@ -16,14 +16,19 @@ void setup()
 {
   //fullScreen();
   size(500, 500); //Display Geometry: landscape, portrait, square
-  appWidth = width;
-  appHeight = height;
+  //Able to swap key variables to test app
+  appWidth = width; //displayWidth
+  appHeight = height; //displayHeight 
   println(width, height, displayWidth, displayHeight);
   //CANVAS WILL ONLY DISPLAY WHEN IT IS SMALLER THAN DISPLAY
   if ( width >= displayWidth) exit() ; //Canvas is broken
   if ( height >= displayHeight) exit() ; //Canvas is broken
   if ( width >= displayWidth || height >= displayHeight ) println("Canvas is BROKEN, bigger than Display"); ; //Error Catch
-  //print program
+  //
+  //DISPLAY GEO
+  String ls="Landscape or Square", p="Portrait",  DO="display orentaition", instruct=" Plz turn, le Fone"; //Local Variables
+  String orentation = (appWidth >= appHeight) ? ls : p; //Ternary Operator, similar to single line IF
+  println(DO, orentation);
   //
 }// END setup
 //
