@@ -15,7 +15,7 @@ int appWidth, appHeight;
 void setup() 
 {
   //fullScreen();
-  size(400, 700); //Display Geometry: landscape, portrait, square
+  size(400, 300); //Display Geometry: landscape, portrait, square
   //Able to swap key variables to test app
   appWidth = width; //displayWidth
   appHeight = height; //displayHeight 
